@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="text-center mb-4">Welcome to the Delhi Library System</h2>
+
+<div class="row row-cols-1 row-cols-md-3 g-4">
+  
+  <div class="col">
+    <div class="card h-100 text-center">
+      <div class="card-body">
+        <h5 class="card-title">📚 View Books</h5>
+        <p class="card-text">Browse all available books in our library.</p>
+        <a href="/books" class="btn btn-primary">View Books</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100 text-center">
+      <div class="card-body">
+        <h5 class="card-title">📖 Borrow Book</h5>
+        <p class="card-text">Get books issued by entering your name and book title.</p>
+        <a href="/borrow" class="btn btn-success">Borrow</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100 text-center">
+      <div class="card-body">
+        <h5 class="card-title">↩️ Return Book</h5>
+        <p class="card-text">Return the books you've borrowed from the library.</p>
+        <a href="/return" class="btn btn-warning">Return</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100 text-center">
+      <div class="card-body">
+        <h5 class="card-title">❤️ Donate Book</h5>
+        <p class="card-text">Donate a book to help us grow our collection.</p>
+        <a href="/donate" class="btn btn-danger">Donate</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100 text-center">
+      <div class="card-body">
+        <h5 class="card-title">➕ Add Book</h5>
+        <p class="card-text">Add official books directly into the library inventory.</p>
+        <a href="/add" class="btn btn-primary">Add Book</a>
+      </div>
+    </div>
+  </div>
+  
+  <div class="col">
+    <div class="card h-100 text-center">
+      <div class="card-body">
+        <h5 class="card-title">📋 Track Issued</h5>
+        <p class="card-text">View current issued books and the borrowers.</p>
+        <a href="/track" class="btn btn-dark">Track Books</a>
+      </div>
+    </div>
+  </div>
+
+</div>
+{% endblock %}

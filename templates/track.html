@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<h2 class="mb-4">Issued Books</h2>
+{% if records %}
+<ul class="list-group">
+    {% for name, book in records %}
+        <li class="list-group-item">{{ book }} is issued by {{ name }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<p class="text-muted">No books currently issued.</p>
+{% endif %}
+{% endblock %}
